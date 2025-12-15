@@ -4,19 +4,20 @@
 
     # Enter a student’s full name
 
+
     # Instantly see:
 
-            # CPS ID
+    #         CPS ID
 
-            # Homeroom
+    #         Homeroom
 
-            # Grade Level
+    #         Grade Level
 
-            # Primary Email
+    #         Primary Email
 
-            # Students must:
+    #         Students must:
 
-            # Describe the search process
+    #         Describe the search process
 
 ## be able to add new data
 # Your program must allow the secretary to ADD a brand new student
@@ -57,4 +58,24 @@
         #    - Display an error message saying the CPS ID is already taken
 
 
+import Students_data
+students = Students_data.student 
+name = str(input("What is the students full name?:"))
+for student in students:
+    print(student['name'])
+CPSID = int(input("What is the student's CPS ID?:"))
+for student in students:
+    print(student['CPSID'])
+HR = int(input("What is the student's homeroom?:"))
+for student in students:
+    print(student['HR'])
+GL = int(input("What is your grade level?:"))
+for student in students:
+    print(student['GL'])
+Pemail = str(input("What is the student's primary email?:"))
+for student in students:
+    print(student['Pemail'])
+Semail = str(input("What is the student's secondary email?:"))
+for student in students:
+    print(student['Semail'])
 
